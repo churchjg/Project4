@@ -60,6 +60,21 @@ body {
     padding: 1px 0;
 }
 
+#block-one-small {
+    width: 25%;
+    height: 25px;
+    background: black;
+}
+#block-two-medium {
+    min-width: 50%;
+    height: 25px;
+    background: black
+}
+#block-three-large {
+    width: 75%;
+    height: 25px;
+    background: black;
+}
 /*
 .tower-picture {
     min-height: 100%;;
