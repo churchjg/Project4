@@ -9,6 +9,20 @@ header {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+.start-game {
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    border: 2px solid black;
+    border-radius: 10%;
+    cursor: pointer;
+    padding: 2px 5px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Sriracha', cursive;
+}
 
 body {
     display: flex;
@@ -79,22 +93,22 @@ body {
     background-color: rgb(165, 165, 165);
 }
 
-#block-one-smallest {
+.block-one-smallest {
     width: 10%;
     height: 25px;
     background: black;
 }
-#block-two-small {
+.block-two-small {
     width: 25%;
     height: 25px;
     background: black;
 }
-#block-three-medium {
+.block-three-medium {
     width: 50%;
     height: 25px;
     background: black
 }
-#block-four-large {
+.block-four-large {
     width: 75%;
     height: 25px;
     background: black;
@@ -111,18 +125,4 @@ body {
 }
 */
 
-.start-game {
-    /* position: absolute; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    border: 2px solid black;
-    border-radius: 10%;
-    cursor: pointer;
-    padding: 2px 5px;
-    margin-bottom: 15px;
-    font-size: 20px;
-    /* font-size: 25px; */
-    font-weight: 900;
-    font-family: 'Sriracha', cursive;
-}
+
