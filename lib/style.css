@@ -60,17 +60,22 @@ body {
     padding: 1px 0;
 }
 
-#block-one-small {
+#block-one-smallest {
+    width: 10%;
+    height: 25px;
+    background: black;
+}
+#block-two-small {
     width: 25%;
     height: 25px;
     background: black;
 }
-#block-two-medium {
+#block-three-medium {
     min-width: 50%;
     height: 25px;
     background: black
 }
-#block-three-large {
+#block-four-large {
     width: 75%;
     height: 25px;
     background: black;
