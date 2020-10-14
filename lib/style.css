@@ -31,13 +31,49 @@ body {
     font-family: 'Sriracha', cursive;
 }
 
+.scoreboard-container {
+    position: absolute;
+    top: 32%;
+    left: 63%;
+    transform: translate(-50%, -50%);
+    height: 225px;
+    border: 1px solid black;
+    padding: 4px;
+    width: 25%;
+}
+
+.scoreboard {
+    position: absolute;
+    text-decoration: underline;
+    color:black;
+    font-weight: bold;
+    top: 5%;
+    left: 35%;
+    font-size: 25px;
+    line-height: 2.5ch;
+}
+.moves {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    font-size: 20px;
+    line-height: 2.5ch;
+  }
+.wins {
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    font-size: 20px;
+    line-height: 2.5ch;
+}
+
 .rules-container {
     position: absolute;
     top: 32%;
-    left: 50%;
+    left: 37%;
     transform: translate(-50%, -50%);
     height: 225px;
-    border: 1px dotted black;
+    border: 1px solid black;
     padding: 4px;
     width: 25%;
 }
@@ -46,6 +82,12 @@ body {
     font-size: 15px;
     line-height: 2.5ch;
 }
+
+/*
+.hidden {
+    display: none;
+}
+*/
 
 .tower-container {
     position: absolute;

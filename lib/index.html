@@ -14,6 +14,11 @@
 </header>
 
 <body>
+    <section class="scoreboard-container">
+        <div class="scoreboard">Scoreboard</div>
+        <div class="moves">Round Moves: 0</div>
+        <div class="wins">Round Wins: 0</div>
+    </section>
     <section class="rules-container">
         <div class="rules">
             -Tower of Hanoi consists of three towers with blocks placed one over the other, with the smallest block at
@@ -24,8 +29,9 @@
             </br> 2. No block can be placed on top of a block smaller than itself.</div>
     </section>
 
-    <button class="start-game">New Game</button>
+    <div class="start-game">New Game</div>
 
+    <div class="hidden">
     <div class="tower-container">
         <div class="tower-one">
             <div class="block-one-smallest"></div>
@@ -35,6 +41,7 @@
         </div>
         <div class="tower-two"></div>
         <div class="tower-three"></div>
+    </div>
     </div>
 </body>
 
