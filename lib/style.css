@@ -95,7 +95,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     display: grid;
-    /* z-index: 3; */
     grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: repeat(1fr); 
     width: 75%;
@@ -103,7 +102,7 @@ body {
     margin: 0 auto;
     grid-column-gap: 1px;
     grid-row-gap: 1px;
-    border: 3px solid black;
+    border: 2px solid black;
 }
 
 .tower-one {
@@ -114,6 +113,18 @@ body {
     align-items: center;
     padding: 1px 0;
     background-color:  rgb(165, 165, 165);
+    border-bottom: 15px solid rgb(95, 51, 51);
+    cursor: pointer;
+}
+
+.tower-one::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 50%;
+    background-color: rgb(95, 51, 51);
+    left: 16.3%;
+    z-index: 1;
 }
 .tower-two {
     border: 2px solid black;
@@ -123,6 +134,17 @@ body {
     align-items: center;
     padding: 1px 0;
     background-color: rgb(165, 165, 165);
+    border-bottom: 15px solid rgb(95, 51, 51);
+    cursor: pointer;
+}
+.tower-two::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 50%;
+    background-color: rgb(95, 51, 51);
+    left: 50%;
+    z-index: 1;
 }
 
 .tower-three {
@@ -133,27 +155,42 @@ body {
     align-items: center;
     padding: 1px 0;
     background-color: rgb(165, 165, 165);
+    border-bottom: 15px solid rgb(95, 51, 51);
+    cursor: pointer;
+}
+.tower-three::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 50%;
+    background-color: rgb(95, 51, 51);
+    left: 82%;
+    z-index: 1;
 }
 
 .block-one-smallest {
     width: 10%;
-    height: 25px;
-    background: black;
+    height: 20px;
+    background: red;
+    z-index: 2;
 }
 .block-two-small {
     width: 25%;
-    height: 25px;
-    background: black;
+    height: 20px;
+    background: yellow;
+    z-index: 2;
 }
 .block-three-medium {
     width: 50%;
-    height: 25px;
-    background: black
+    height: 20px;
+    background: green;
+    z-index: 2;
 }
 .block-four-large {
     width: 75%;
-    height: 25px;
-    background: black;
+    height: 20px;
+    background: blue;
+    z-index: 2;
 }
 /*
 .tower-picture {
