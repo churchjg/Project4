@@ -12,7 +12,21 @@ header {
 .start-game {
     position: absolute; 
     top: 14%; 
-    left: 50%; 
+    left: 45%; 
+    transform: translate(-50%, -50%); 
+    border: 2px solid black;
+    border-radius: 10%;
+    cursor: pointer;
+    padding: 2px 5px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Sriracha', cursive;
+}
+.clear-game {
+    position: absolute; 
+    top: 14%; 
+    left: 55%; 
     transform: translate(-50%, -50%); 
     border: 2px solid black;
     border-radius: 10%;
@@ -24,6 +38,16 @@ header {
     font-family: 'Sriracha', cursive;
 }
 
+#communicator {
+    position: absolute; 
+    top: 18%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-weight: 500;
+    font-family: 'Sriracha', cursive;
+    color: green
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -33,7 +57,7 @@ body {
 
 .scoreboard-container {
     position: absolute;
-    top: 32%;
+    top: 35%;
     left: 63%;
     transform: translate(-50%, -50%);
     height: 225px;
@@ -66,10 +90,16 @@ body {
     font-size: 20px;
     line-height: 2.5ch;
 }
+#timer-minutes {
+    color: red;
+}
+#timer-seconds{
+    color:red;
+}
 
 .rules-container {
     position: absolute;
-    top: 32%;
+    top: 35%;
     left: 37%;
     transform: translate(-50%, -50%);
     height: 225px;
@@ -105,11 +135,11 @@ body {
     border: 2px solid black;
 }
 
-.tower-one {
+#tower-one {
     border: 2px solid black;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
     align-items: center;
     padding: 1px 0;
     background-color:  rgb(165, 165, 165);
@@ -117,81 +147,95 @@ body {
     cursor: pointer;
 }
 
-.tower-one::before {
+#pole1 {
     content: "";
     position: absolute;
-    width: 8px;
+    width: 12px;
     height: 50%;
     background-color: rgb(95, 51, 51);
-    left: 16.3%;
+    left: 16.1%;
     z-index: 1;
 }
-.tower-two {
+#tower-two {
     border: 2px solid black;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
     align-items: center;
     padding: 1px 0;
     background-color: rgb(165, 165, 165);
     border-bottom: 15px solid rgb(95, 51, 51);
     cursor: pointer;
 }
-.tower-two::before {
+#pole2 {
     content: "";
     position: absolute;
-    width: 8px;
+    width: 12px;
     height: 50%;
     background-color: rgb(95, 51, 51);
-    left: 50%;
+    left: 49.5%;
     z-index: 1;
 }
 
-.tower-three {
+#tower-three {
     border: 2px solid black;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
     align-items: center;
     padding: 1px 0;
     background-color: rgb(165, 165, 165);
     border-bottom: 15px solid rgb(95, 51, 51);
     cursor: pointer;
 }
-.tower-three::before {
+#pole3 {
     content: "";
     position: absolute;
-    width: 8px;
+    width: 12px;
     height: 50%;
     background-color: rgb(95, 51, 51);
-    left: 82%;
+    left: 83%;
     z-index: 1;
 }
 
-.block-one-smallest {
+
+#block-1 {
     width: 10%;
     height: 20px;
     background: red;
     z-index: 2;
+    text-align: center;
+    color: white;
+    font-weight: bold;
 }
-.block-two-small {
+#block-2 {
     width: 25%;
     height: 20px;
-    background: yellow;
+    background: orange;
     z-index: 2;
+    text-align: center;
+    color: white;
+    font-weight: bold;
 }
-.block-three-medium {
+#block-3 {
     width: 50%;
     height: 20px;
     background: green;
     z-index: 2;
+    text-align: center;
+    color: white;
+    font-weight: bold;
 }
-.block-four-large {
+#block-4 {
     width: 75%;
     height: 20px;
     background: blue;
     z-index: 2;
+    text-align: center;
+    color: white;
+    font-weight: bold;
 }
+
 /*
 .tower-picture {
     min-height: 100%;;

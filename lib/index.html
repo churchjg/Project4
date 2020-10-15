@@ -5,12 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
-    <script src="game.js"></script>
     <title>Tower of Hanoi</title>
 </head>
 <header>
     <!-- <img src="Thang Long.jpg" class="tower-picture"> -->
-    <h1>Tower of Hanoi</h1>
+    <h1>Towers of Hanoi</h1>
 </header>
 
 <body>
@@ -30,18 +29,31 @@
             </br> 2. No block can be placed on top of a block smaller than itself.</div>
     </section>
 
-    <div class="start-game">New Game</div>
+    <button class="start-game">New Game</button>
+    <button class="clear-game">Restart</button>
+    <h3 id="communicator"></h3>
 
     <div class="tower-container">
-        <div class="tower-one">
-            <div class="block-one-smallest"></div>
-            <div class="block-two-small"></div>
-            <div class="block-three-medium"></div>
-            <div class="block-four-large"></div>
+        <div class='towers' id="tower-one">
+            <div id="base1" class="bases"></div>
+            <div id="pole1" class="poles"></div>
+            <div class="blocks" id="block-1" data-id="1">1</div>
+            <div class="blocks" id="block-2" data-id="2">2</div>
+            <div class="blocks" id="block-3" data-id="3">3</div>
+            <div class="blocks" id="block-4" data-id="4">4</div>
         </div>
-        <div class="tower-two"></div>
-        <div class="tower-three"></div>
+
+        <div class="towers" id="tower-two">
+            <div id="base2" class="bases"></div>
+            <div id="pole2" class="poles"></div>
+        </div>
+
+        <div class="towers" id="tower-three">
+            <div id="base3" class="bases"></div>
+            <div id="pole3" class="poles"></div>
+        </div>
     </div>
+    <script src="game.js"></script>
 </body>
 
 </html>
