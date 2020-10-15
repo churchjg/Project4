@@ -77,19 +77,20 @@ body {
     font-size: 25px;
     line-height: 2.5ch;
 }
-.moves {
+h2 {
     position: absolute;
     top: 30%;
     left: 35%;
     font-size: 20px;
     line-height: 2.5ch;
   }
-.wins {
+nav {
     position: absolute;
     top: 60%;
     left: 35%;
     font-size: 20px;
     line-height: 2.5ch;
+    font-weight:bold;
 }
 #timer-minutes {
     color: red;
