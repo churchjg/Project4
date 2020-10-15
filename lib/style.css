@@ -45,7 +45,8 @@ header {
     transform: translate(-50%, -50%); 
     font-weight: 500;
     font-family: 'Sriracha', cursive;
-    color: green
+    color: green;
+    text-align: center;
 }
 
 body {
@@ -150,10 +151,10 @@ body {
 #pole1 {
     content: "";
     position: absolute;
-    width: 12px;
+    width: 14px;
     height: 50%;
     background-color: rgb(95, 51, 51);
-    left: 16.1%;
+    left: 16.19%;
     z-index: 1;
 }
 #tower-two {
@@ -170,10 +171,10 @@ body {
 #pole2 {
     content: "";
     position: absolute;
-    width: 12px;
+    width: 14px;
     height: 50%;
     background-color: rgb(95, 51, 51);
-    left: 49.5%;
+    left: 49.53%;
     z-index: 1;
 }
 
@@ -191,13 +192,12 @@ body {
 #pole3 {
     content: "";
     position: absolute;
-    width: 12px;
+    width: 14px;
     height: 50%;
     background-color: rgb(95, 51, 51);
-    left: 83%;
+    left: 82.78%;
     z-index: 1;
 }
-
 
 #block-1 {
     width: 10%;
