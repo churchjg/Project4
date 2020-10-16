@@ -92,6 +92,14 @@ nav {
     line-height: 2.5ch;
     font-weight:bold;
 }
+#moves {
+    color: red;
+    font-size: 20px;
+}
+#wins {
+    color:green;
+    font-size: 20px;
+}
 #timer-minutes {
     color: red;
 }
